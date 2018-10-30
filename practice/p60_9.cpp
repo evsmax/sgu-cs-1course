@@ -22,20 +22,14 @@ for (int n=2; n <= k; n++)
   {
     x *= xq;
     fact = fact * (w+1) * (w+2);
-    cout << "fact " << fact << '\n';
     sum = sum - ( x/fact);
-    cout <<"sum " << sum << '\n';
     w+=2;
   }
   else
   {
     x *= xq;
-    cout <<"x " << x;
-    cout << "fact2 " <<fact<<"n "<< n << '\n';
     fact = fact * (w+1) * (w+2);
-
     sum = sum + ( x/fact);
-    cout <<"sum2 " << sum << '\n';
     w+=2;
   }
 cout << sum << endl ;
