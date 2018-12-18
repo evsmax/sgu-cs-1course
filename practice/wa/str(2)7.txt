@@ -1,0 +1,18 @@
+#include <iostream>
+#include <string>
+ using namespace std;
+int main()
+{                   
+      
+      string str2, str1;
+      cout<<"Enter str1: "; getline(cin,str1); 
+      cout<<"Enter str2: "; getline(cin,str2); 
+      size_t len = str2.length();
+      size_t n = 0;
+      while ((n = str1.find(str2)) != string::npos)
+      {str1.erase(n, len);}
+ 
+     cout<<str1<<endl;  
+    
+    return 0;
+}

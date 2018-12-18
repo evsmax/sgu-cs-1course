@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstring>
+#include <string>
+using namespace std;
+int main()
+{
+     
+     string s;
+     getline(cin,s);
+     int l=s.size();
+     char c;
+     cout<<"Enter symbol for double: ";
+     cin>>c;
+     for (int i=0;i < l;i++)
+     {
+          if(s[i]==c)
+              cout << s[i] << s[i];
+          else
+              cout<<s[i];
+     }
+     return 0;
+}
