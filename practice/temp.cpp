@@ -55,7 +55,7 @@ Type* max_j(Type(**array), int h, int w)
         line[i] = sum;
     }
 
-    return line;
+    return maxa(line, h);
 }
 
 int main()
@@ -64,8 +64,8 @@ int **a, *b, n, m;
 cin >> n >> m;
 a = getA (a, n, m);
 print(a, n, m);
-b = max_j(a, n, m);
-cout << maxa(b, n);
+
+cout << "normA= " << max_J(a, n, m);
 
 
 return 0;
