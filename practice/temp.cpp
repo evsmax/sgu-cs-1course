@@ -29,43 +29,50 @@ void print(Type(**array), int h, int w)
 }
 
 template <typename Type>
-Type maxa(Type *array, int size)
+Type maxa(Type **array, int k ,int size)
 {
-    Type p = array[0];
+    Type p = array[k][0];
     for (int l = 0; l < size; l++)
         {
-            if(array[l] > p)
-                p = array[l];
+            if(array[k][l] > p)
+                p = array[k][l];
         }
-    
+
     return p;
 }
 template <typename Type>
-Type* max_j(Type(**array), int h, int w)
+Type sum(Type *array, int size)
+{
+    Type b = 0;
+    for (int l = 0; l < size; l++)
+        {
+                b += array[l];
+        }
+
+    return b;
+}
+template <typename Type>
+Type max_j(Type(**array), int h, int w)
 {
     Type *line = new Type [h];
-    Type sum ;
-    for (int i = 1; i < h; i++)
-    {
-        sum = 0;
-        for (int j = 1; i < w; i++)
-        {
-            sum += array[i][j];
-        }
-        line[i] = sum;
-    }
 
-    return maxa(line, h);
+    for (int i = 0; i < h; i++)
+    {
+
+
+        line[i] = maxa(array, i, w);
+    }
+    return sum(line, h) ;
 }
 
 int main()
 {
-int **a, *b, n, m;
+double **a, n, m;
 cin >> n >> m;
 a = getA (a, n, m);
 print(a, n, m);
 
-cout << "normA= " << max_J(a, n, m);
+cout << max_j(a , n ,m);
 
 
 return 0;
