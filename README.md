@@ -1,1 +1,1 @@
-# sgu-cs-1course
+ssu_cpp
