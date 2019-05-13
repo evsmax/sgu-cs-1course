@@ -11,8 +11,6 @@ void greeting(string &f, string  &s, string &p)
   getline(cin, f);
   cout << "enter the name of the second file: " << endl;
   getline(cin, s);
-  cout << "enter the name of the third file: " << endl;
-  getline(cin, f1);
   f = p + f + ".txt";
   s = p + s + ".txt";
   b = p + b + ".txt";
