@@ -21,7 +21,7 @@ void copy (fstream& p, fstream& s)
     string l;
 while(getline(s, l))
    {
-     p << l;
+     p << l << endl;
     }
 }
 
