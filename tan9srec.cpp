@@ -8,10 +8,10 @@ void ph(int n, string j = "жили на луне" string vv = "ворочали
 }
     else
 {
-    cout << n << j;
-    cout << n << vv;
-    cout <<dr;
-    cout << n - 1 << ost;
+    cout << n << j << endl;
+    cout << n << vv << endl;
+    cout <<dr << endl;
+    cout << n - 1 << ost << endl;
     ph(n - 1);
 }
 }
