@@ -94,9 +94,5 @@ void swit(string line, std::fstream& g,  std::fstream& h)
    fs.close();
    gs.close();
    cout << "complete" << endl;
-   if('3' < '9')
-   {
-     cout <<"yes";
-   }
    return 0;
 }
