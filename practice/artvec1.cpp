@@ -8,7 +8,7 @@ int main()
   cout << "enter a renge [1 to n]: ";
   int n;
   cin >> n;
-  vector<int> a(n + 1);
+  vector<int> a;
   for(int i = 1; i <= n; i++)
   {
     a.push_back(i);
