@@ -2,8 +2,6 @@
 #include <vector>
 #include <numeric>
 #include <algorithm>
-#include <array>
-#include <functional>
 using namespace std;
 int vmax(std::vector<int> v)
 { int g = v[0];
